@@ -1,0 +1,511 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* хедер %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+header {
+    margin-top: 20px;
+    /* background-color: #fceeee; */
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px; 
+}
+
+.logo {
+    float: left;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 105px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #747474;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+nav a {
+    color: #747474;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+nav a:hover {
+    color: #000000;
+    border-bottom: 3px solid black;
+}
+
+nav li:hover {
+    color: #000000;
+    border-bottom: 3px solid black;
+}
+
+/* мейн %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+main {
+    margin-top: 60px;
+    background-color: #ffffff;
+    font-family: sans-serif; 
+}
+
+.containerM {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 200px;
+    margin-right: 20px;
+       
+}
+.sidebar h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar li {
+    margin-bottom: 5px;
+}
+.sidebar button {
+    color: #686868;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    background: none;
+    padding: 5px;
+}
+.sidebar button:hover {
+    color: #000000;
+    border-bottom: 2px solid black;
+}
+
+.prev-button{
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.next-button{
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cars {
+    width: calc(100% - 220px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.car {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: #ffffff; 
+    border-radius: 5px; 
+    border: 3px solid #e4e4e4;  
+    padding: 5px;
+}
+.car img{
+    width: 280px;
+    height: 220px;
+    border-radius: 5px 5px 0 0;
+}
+.car-name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+.car p {
+    margin-bottom: 10px;
+}
+.car-price-block{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.car-price-block-span{
+    margin-left: 8px;
+}
+.car-price{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #242424;
+}
+
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 1000px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.modal-content h1{
+    margin-bottom: 18px;
+}
+
+.close-button {
+    float: right;
+    font-size: 39px;
+    font-weight: bold;
+    cursor: pointer;
+} 
+
+/* слайдер */
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+  
+.slides {
+    display: flex;
+    width: 400%;
+    animation: slide 1s infinite;
+}
+  
+.slides img {
+    width: 25%;
+}
+  
+
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+}
+  
+.prev-button, .next-button {
+    width: 75px;
+    height: 35px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+.prev-button:hover, .next-button:hover{
+    background-color: rgb(100, 100, 100);
+}
+
+/* таблица */
+
+.modalList{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.modalTable{
+    width: 600px;
+}
+.modalTable td{
+    padding: 5px;
+}
+
+.modalTable tr{
+    padding: 5px;
+}
+
+.modalListHeader{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.BronBt{
+    margin-top: 24px;
+    float: right;
+    background-color: #1b9221;
+    color: #e4e4e4;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    width: 145px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.BronBt:hover{
+    background-color: #115f15;
+}
+/* о фирме ############################################################# */
+.salon-text{
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+.containerFirm {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.salon-img{
+    width: 70%;
+    border-radius: 15px;
+    margin-top: 44px;
+}
+
+.car-price-bt{
+    width: 105px;
+    padding: 6px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2442e9;
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.car-price-bt:hover{
+    background-color: #182b97;
+}
+.car-price-block-left{
+    display: flex;
+    flex-direction: row;
+}
+
+.car-price-block-span{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/* футер %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+footer {
+    width: 100%;
+    margin-top: 350px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Модалка для входа в аккаунт */
+.modalCab {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+.modal-contentCab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.close-buttonCab {
+    float: right;
+    font-size: 39px;
+    font-weight: bold;
+    cursor: pointer;
+} 
+.copyright{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+.registration-cssave{
+    padding:50px 0;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+  
+.registration-cssave form {
+    max-width:600px;
+    padding:10px 60px;
+    border-radius:10px;
+    /* box-shadow:4px 4px 15px rgba(0, 0, 0, 0.2); */
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.registration-cssave form h3 {
+    font-weight:bold;
+    margin-bottom:30px;
+}
+  
+.registration-cssave .item {
+    border-radius:10px;
+    margin-bottom:25px;
+    padding:10px 20px;
+}
+  
+.registration-cssave .create-account {
+    border-radius:30px;
+    padding:10px 20px;
+    font-size:18px;
+    font-weight:bold;
+    background-color: #2442e9;
+    border:none;
+    color:white;
+    margin-top:20px;
+    cursor: pointer;
+}
+
+.create-account:hover{
+    background-color: #182b97;
+}
+  
+@media (max-width: 576px) {
+    .registration-cssave form {
+      padding:5px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/* страница услуг */
+
+.uslugaHeader{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.uslugaName{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    margin-top: 32px;
+    margin-bottom: 10px;
+}
+
+.uslugaText{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-bottom: 6px;
+}
+
+.uslList li{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-left: 24px;
+    margin-bottom: 4px;
+}
+
+
+.DBtable th{
+    padding: 5px;
+}
+.DBtableBody td{
+    padding: 10px;
+}
+.dbMenu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.dbMenu_ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.dbMenu_li a{
+    text-decoration: none;
+    color: #747474;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.dbMenu_li a:hover{
+    color: #2442e9;
+    border-bottom: 2px solid #2442e9;
+}
+
+.containerDB{
+    display: flex;
+    flex-direction: column;
+}
+
+.active{
+    color: #2442e9;
+    border-bottom: 2px solid #2442e9;
+}

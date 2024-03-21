@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link type="Image/x-icon" href="./images/logo.ico" rel="icon">
+  <title>Автосалон</title>
+</head>
+
+<body class="body">
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/i-car-1.svg" alt="Логотип автосалона">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Catalog.html">Каталог</a></li>
+          <li><a href="О_фирме.html">О фирме</a></li>
+          <li><a href="Услуги.html" style="color: #000000; border-bottom: 3px solid black;">Услуги</a></li>
+          <li onclick="openCabModal()">Войти</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="containerU">
+      <p class="uslugaHeader">Компания I-CAR с момента открытия плотно сотрудничает и поддерживает партнёрские отношения с клиентами относящимся к категории юридических лиц. Для комфортного взаимодействия был сформирован корпоративный отдел ГК ПА, который по сей день активно развивается. Мы предоставляем 11 видов разовых и постоянных автоуслуг юридическим лицам, применяя индивидуальную программу лояльности для наших партнеров.<br><br>
+        При обслуживании/покупке более 1 автомобиля в год Вы можете стать нашим партнёром и начать пользоваться программой лояльности подобранной специально для вас на следующие виды автоуслуг:</p>
+        
+      <p class="uslugaName">Сервисное обслуживание</p>
+      <p class="uslugaText">Вы можете обслуживать как гарантийные автомобили, так и постгарантийные:</p>
+      <ul class="uslList">
+        <li>обслуживать автомобили по индивидуальным условиям (%,в зависимости от количества обсуживающегося парка в год)</li>
+        <li>получать приоритет в покупке запасных частей при ограниченной доступности на рынке</li>
+        <li>получать приоритет при записи на сервис на отдельном подъемнике для юридических лиц</li>
+        <li>возможность подбора ближайшей локации для удобства логистики</li>
+      </ul>
+
+      <p class="uslugaName">Выкуп автопарка</p>
+      <p class="uslugaText">Вы можете реализовывать свой устаревший парк через нас:</p>
+      <ul class="uslList">
+        <li>сдать свой автомобиль с обменом на новый по индивидуальным условиям (%, в зависимости от количества покупок в год)</li>
+        <li>срочно продать свой автомобиль нашей компании без обмена (высвободить оборотные средства вашей компании)</li>
+        <li>выставить свой автомобиль на комиссию на крытую теплую торговую площадку (любую из 6)</li>
+        <li>возможность подбора ближайшей локации для удобства логистики</li>
+        <li>возможность выезда специалиста оценки на вашу территорию для предварительных договоренностей</li>
+      </ul>
+
+      <p class="uslugaName">Предоставление услуг лизинга</p>
+      <p class="uslugaText">Вы можете воспользоваться финансовым инструментом, который дает вам возможность не только уменьшить налогооблагаемую базу, применить ускоренную амортизацию и возместить НДС, но и высвободить оборотные средства вашей компании. Приобретая наши автомобили в лизинг вы получаете:</p>
+      <ul class="uslList">
+        <li>индивидуальные условия на покупку ам за счет партнерских соглашений между нами и лизинговой компанией, а также сотрудничеством с импортером (%, в зависимости от количества покупок в год)</li>
+        <li>высокую скорость принятия решения о финансировании</li>
+        <li>индивидуальные условия финансирования</li>
+        <li>полное сопровождение договоров лизинга и грамотное консультирование</li>
+      </ul>
+
+
+
+
+
+      <div id="modalCab" class="modalCab">
+        <div class="modal-contentCab">
+          <span class="close-buttonCab" onclick="closeCabModal()">&times;</span>
+
+          <div class="registration-cssave">
+            <form>
+              <h3 class="text-center">Вход</h3>
+              <div class="form-group">
+                <input id="f1" class="form-control item" type="text" name="username" maxlength="15" minlength="4"
+                  pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Логин" required>
+              </div>
+              <div class="form-group">
+                <input id="f2" class="form-control item" type="password" name="Пароль" minlength="6" id="password"
+                  placeholder="Пароль" required>
+              </div>
+              <!-- <div class="form-group">
+                
+              </div> -->
+            </form>
+            <button class="btn btn-primary btn-block create-account" type="submit" onclick="GO()">Войти в
+                базу</button>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 Автосалон "I-CAR" <br> Все права защищены
+      </div>
+    </div>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+
+</html>

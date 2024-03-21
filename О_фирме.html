@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link type="Image/x-icon" href="./images/logo.ico" rel="icon">
+  <title>Автосалон</title>
+</head>
+
+<body class="body">
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/i-car-1.svg" alt="Логотип автосалона">
+      </div>
+      <nav>
+        <ul> 
+          <li><a href="Catalog.html">Каталог</a></li>
+          <li><a href="О_фирме.html" style="color: #000000; border-bottom: 3px solid black;">О фирме</a></li>
+          <li><a href="Услуги.html">Услуги</a></li>
+          <li onclick="openCabModal()">Войти</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="containerFirm">
+      <p class="salon-text"><span style="font-size: 30px; font-weight: bolder; color:#2442e9">I-CAR</span> - это фирма по продаже подержанных автомобилей, который предоставляет широкий выбор подержанных автомобилей различных марок, моделей и классов!</p>
+      <img class="salon-img" src="./images/salon.jpg" alt="" srcset="">
+
+
+
+
+
+      <div id="modalCab" class="modalCab">
+        <div class="modal-contentCab">
+          <span class="close-buttonCab" onclick="closeCabModal()">&times;</span>
+
+          <div class="registration-cssave">
+            <form>
+              <h3 class="text-center">Вход</h3>
+              <div class="form-group">
+                <input id="f1" class="form-control item" type="text" name="username" maxlength="15" minlength="4"
+                  pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Логин" required>
+              </div>
+              <div class="form-group">
+                <input id="f2" class="form-control item" type="password" name="Пароль" minlength="6" id="password"
+                  placeholder="Пароль" required>
+              </div>
+              <!-- <div class="form-group">
+                
+              </div> -->
+            </form>
+            <button class="btn btn-primary btn-block create-account" type="submit" onclick="GO()">Войти в
+                базу</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 Автосалон "I-CAR" <br> Все права защищены
+      </div>
+    </div>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link type="Image/x-icon" href="./images/logo.ico" rel="icon">
+  <title>Автосалон</title>
+</head>
+
+<body class="body">
+
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/i-car-1.svg" alt="Логотип автосалона">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Catalog.html" style="color: #000000; border-bottom: 3px solid black;">Каталог</a></li>
+          <li><a href="О_фирме.html">О фирме</a></li>
+          <li><a href="Услуги.html">Услуги</a></li>
+          <li onclick="openCabModal()">Войти</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="containerM">
+      <div class="sidebar">
+        <h2>Параметры сортировки</h2>
+        <ul>
+          <li><button id="sortByNameA">По алфавиту (А-Я)</button></li>
+          <li><button id="sortByNameD">По алфавиту (Я-А)</button></li>
+          <li><button id="sortByPriceA">По цене (возрастание)</button></li>
+          <li><button id="sortByPriceD">По цене (убывание)</button></li>
+        </ul>
+      </div>
+
+      <div class="cars">
+        <div class="car">
+          <img src="./images/cars/kia1.jpg" alt="Машина 1">
+          <h3 class="car-name">Kia Rio X-Line 1.6 AT</h3>
+          <div class="car-price-block">
+            <div class="car-price-block-left">
+              <p class="car-price">1538000</p><span class="car-price-block-span">рублей</span>
+            </div>
+            <button class="car-price-bt" onclick="openModal()">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="./images/cars/tiguan2.jpg" alt="Машина 2">
+          <h3 class="car-name">Volkswagen Tiguan 1.4 AMT</h3>
+          <div class="car-price-block">
+            <div class="car-price-block-left">
+              <p class="car-price">2730000</p><span class="car-price-block-span">рублей</span>
+            </div>
+            <button class="car-price-bt" onclick="openModal()">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="./images/cars/priora3.jpg" alt="Машина 3">
+          <h3 class="car-name">ВАЗ (Lada) Priora 1.6 MT</h3>
+          <div class="car-price-block">
+            <div class="car-price-block-left">
+              <p class="car-price">569000</p><span class="car-price-block-span">рублей</span>
+            </div>
+            <button class="car-price-bt" onclick="openModal()">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="./images/cars/vesta4.jpg" alt="Машина 4">
+          <h3 class="car-name">ВАЗ (Lada) Vesta 1.6 MT</h3>
+          <div class="car-price-block">
+            <div class="car-price-block-left">
+              <p class="car-price">961000</p><span class="car-price-block-span">рублей</span>
+            </div>
+            <button class="car-price-bt" onclick="openModal()">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="./images/cars/datsun5.jpg" alt="Машина 5">
+          <h3 class="car-name">Datsun on-DO 1.6 MT</h3>
+          <div class="car-price-block">
+            <div class="car-price-block-left">
+              <p class="car-price">480000</p><span class="car-price-block-span">рублей</span>
+            </div>
+            <button class="car-price-bt" onclick="openModal()">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="./images/cars/getz6.jpg" alt="Машина 6">
+          <h3 class="car-name">Hyundai Getz 1.3 MT</h3>
+          <div class="car-price-block">
+            <div class="car-price-block-left">
+              <p class="car-price">370000</p><span class="car-price-block-span">рублей</span>
+            </div>
+            <button class="car-price-bt" onclick="openModal()">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="./images/cars/niva7.jpg" alt="Машина 7">
+          <h3 class="car-name">ВАЗ (Lada) 2131 (4x4) 1.7 MT</h3>
+          <div class="car-price-block">
+            <div class="car-price-block-left">
+              <p class="car-price">545000</p><span class="car-price-block-span">рублей</span>
+            </div>
+            <button class="car-price-bt" onclick="openModal()">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="./images/cars/kalina8.jpg" alt="Машина 8">
+          <h3 class="car-name">ВАЗ (Lada) Kalina 1.6 MT</h3>
+          <div class="car-price-block">
+            <div class="car-price-block-left">
+              <p class="car-price">325000</p><span class="car-price-block-span">рублей</span>
+            </div>
+            <button class="car-price-bt" onclick="openModal()">Подробнее</button>
+          </div>
+        </div>
+
+        <div class="car">
+          <img src="./images/cars/accent9.jpg" alt="Машина 9">
+          <h3 class="car-name">Hyundai Accent 1.5 MT</h3>
+          <div class="car-price-block">
+            <div class="car-price-block-left">
+              <p class="car-price">215000</p><span class="car-price-block-span">рублей</span>
+            </div>
+            <button class="car-price-bt" onclick="openModal()">Подробнее</button>
+          </div>
+        </div>
+
+        
+
+
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h1>Kia Rio X-Line 1.6 AT (123 л.с.) 2017</h1>
+
+            <!-- Слайдер -->
+            <div class="slider">
+              <div class="slides">
+                <img src="./images/cars/kia1.jpg" alt="Image 1">
+                <img src="./images/cars/kia2.jpg" alt="Image 2">
+                <img src="./images/cars/kia3.jpg" alt="Image 3">
+              </div>
+              <div class="slider-nav">
+                <button class="prev-button" onclick="prevSlide()">&lt;</button>
+                <button class="next-button" onclick="nextSlide()">&gt;</button>
+              </div>
+            </div>
+            <!-- /Слайдер -->
+
+
+            <div class="modalList">
+              <h3 class="modalListHeader">Характеристики</h3>
+              <table border="1" style="border-collapse:collapse;" class="modalTable">
+                <tr>
+                  <td>Тип кузова</td>
+                  <td>Хетчбек</td>
+                </tr>
+                <tr>
+                  <td>Двигатель</td>
+                  <td>1.6 литра</td>
+                </tr>
+                <tr>
+                  <td>Мощность</td>
+                  <td>85л.с.</td>
+                </tr>
+                <tr>
+                  <td>Привод</td>
+                  <td>Передний привод(FWD)</td>
+                </tr>
+                <tr>
+                  <td>Топливо</td>
+                  <td>Бензин</td>
+                </tr>
+                <tr>
+                  <td>Коробка</td>
+                  <td>МКПП</td>
+                </tr>
+              </table>
+            </div>
+
+            <button class="BronBt">Забронировать</button>
+          </div>
+        </div>
+
+
+
+
+        <div id="modalCab" class="modalCab">
+          <div class="modal-contentCab">
+            <span class="close-buttonCab" onclick="closeCabModal()">&times;</span>
+
+            <div class="registration-cssave">
+              <form>
+                <h3 class="text-center">Вход</h3>
+                <div class="form-group">
+                  <input id="f1" class="form-control item" type="text" name="username" maxlength="15" minlength="4"
+                    pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Логин" required>
+                </div>
+                <div class="form-group">
+                  <input id="f2" class="form-control item" type="password" name="Пароль" minlength="6" id="password"
+                    placeholder="Пароль" required>
+                </div>
+                <!-- <div class="form-group">
+                  
+                </div> -->
+              </form>
+              <button class="btn btn-primary btn-block create-account" type="submit" onclick="GO()">Войти в
+                  базу</button>
+            </div>
+  
+
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="copyright">
+        &copy; 2024 Автосалон "I-CAR" <br> Все права защищены
+      </div>
+    </div>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+
+</html>
